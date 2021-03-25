@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kreiranje Responsive Galerije</title>
+
+    <style>
+        body {
+            font-family: Calibri;
+
+        }
+
+        .grid-container {
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+
+
+
+        }
+
+
+
+        .box {
+            height: 113px;
+            width: 130px;
+            background-repeat: no-repeat;
+            background: linear-gradient(transparent 80%, #8585eb 80%, white 20%), url(placeholder-image.png);
+            background-color: #8585eb;
+            background-size: contain;
+            border-radius: 8px;
+            background-position: top;
+            border: 1px solid gray;
+
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 16px;
+
+        }
+
+        p {
+            margin: 30px 0;
+        }
+
+
+
+
+        @media screen and (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .text {
+            font-size: 14px;
+            margin: 86px 0;
+            text-align: center;
+            padding: 7px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gallery Heading</h1>
+
+    <div class="grid-container">
+
+        <div class="box">
+            <div class="text">Image Title</div>
+        </div>
+
+        <div class="box">
+            <div class="text">Image Title</div>
+        </div>
+
+        <div class="box">
+            <div class="text">Image Title</div>
+        </div>
+
+        <div class="box">
+            <div class="text">Image Title</div>
+        </div>
+
+        <div class="box">
+            <div class="text">Image Title</div>
+        </div>
+
+        <div class="box">
+            <div class="text">Image Title</div>
+        </div>
+
+        <div class="box">
+            <div class="text">Image Title</div>
+        </div>
+
+        <div class="box">
+            <div class="text">Image Title</div>
+        </div>
+
+        <div class="box">
+            <div class="text">Image Title</div>
+        </div>
+        
+        <div class="box">
+            <div class="text">Image Title</div>
+        </div>
+
+    </div>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nemo tempora repellendus quaerat at placeat
+        minus, unde sapiente ullam qui, ab incidunt? Doloribus, sint doloremque incidunt fugit dolores cum? Enim!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, doloremque ipsum! Dolorum beatae
+        voluptatem, debitis, nostrum ducimus deserunt minima, vero assumenda ullam impedit molestiae optio natus
+        officia ad rerum quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nemo tempora
+        repellendus quaerat at placeat
+        minus, unde sapiente ullam qui, ab incidunt? Doloribus, sint doloremque incidunt fugit dolores cum? Enim!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, doloremque ipsum! Dolorum beatae
+        voluptatem, debitis, nostrum ducimus deserunt minima, vero assumenda ullam impedit molestiae optio natus
+        officia ad rerum quibusdam!</p>
+
+</body>
+
+</html>
